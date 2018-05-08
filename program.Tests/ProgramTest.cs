@@ -57,6 +57,22 @@ namespace program.Tests
         }
 
         [TestMethod]
+        public void StringToDateOutOfRangeTest()
+        {
+            //arrange
+            bool expected = false;
+            string dateString = "35/12/2018";
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("pl-PL");
+            DateRange dateRange = new DateRange();
+
+            //act
+            bool actual = dateRange.StringToDate(dateString);
+
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
         public void GetNewestDateTest()
         {
             DateRange dateRange = new DateRange();

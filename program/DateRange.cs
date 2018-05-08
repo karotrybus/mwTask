@@ -70,19 +70,16 @@ namespace program
 
             if (!(date1.Year == date2.Year))
             {
-                Console.WriteLine("dd.MM.yyyy - dd.MM.yyyy");
                 Console.WriteLine("{0} - {1}", date1.ToString("dd.MM.yyyy"), date2.ToString("dd.MM.yyyy"));
             }
             else
             {
                 if (!(date1.Month == date2.Month))
                 {
-                    Console.WriteLine("dd.MM - dd.MM.yyyy\n");
                     Console.WriteLine("{0} - {1}", date1.ToString("dd.MM"), date2.ToString("dd.MM.yyyy"));
                 }
                 else
                 {
-                    Console.WriteLine("dd - dd.MM.yyyy\n");
                     Console.WriteLine("{0} - {1}", date1.ToString("dd"), date2.ToString("dd.MM.yyyy"));
                 }
             }
@@ -96,10 +93,10 @@ namespace program
 
         public void PrintPatterns()
         {
-            Console.WriteLine("Acceptable date formats:");
+            Console.WriteLine("     Acceptable date formats:");
             foreach(var pattern in patterns)
             {
-                Console.WriteLine("{0} ", pattern);
+                Console.WriteLine("     {0}", pattern);
             }
         }
     }
