@@ -4,7 +4,7 @@ The solution includes command line application and test project.
 The application accepts input parameters, check if they are in the correct date format and prints date range in console. The correct date format is dependent on current culture used by thread.  
 The test project contains unit tests that check if methods used in application work correctly. 
 
-**Exemples of usage**
+**Examples of usage**
 
 `program.exe 2016-03-01 2018-05-12`
 
