@@ -6,8 +6,7 @@ namespace program
 {
     public class DateRange
     {
-        private List<String> patterns;    // = { "dd/MM/yyyy", "MM.dd.yyyy", "MM-dd-yyyy", "yyyy/MM/dd", "yyyy.MM.dd", "yyyy-MM-dd"};
-        public List<String> Patterns { get { return patterns; } }
+        private List<String> patterns;
         private List<DateTime> dates;
 
         public DateRange()
